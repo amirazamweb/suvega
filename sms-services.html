@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paypath</title>
+        <!-- favicon  -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- faremwork of css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+        <!-- style sheet of css        -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive sheet of css -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- fonts awsome icon link            -->
+        <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+        <!-- slick-slider link css -->
+        <link rel="stylesheet" href="assets/css/slick.min.css">
+        <!-- animation of css -->
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </head>
+<body>
+    <div class="site-wrapper">
+        <div class="first_nav_hero_about">
+            <!-- ======== 1.1. header section ======== -->
+            <header>
+                <nav class="container navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <!-- site logo -->
+                        <a class="nav-logo p-0" href="index.html"><img src="assets/images/suvega-logo.png" alt="logo"></a>
+                                <!-- navigation button  -->
+                        <button class="navbar-toggle" onclick="openNav()" type="button"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- navigation bar manu  -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul
+                                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-2 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About us</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Enterprise <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">SMS Services</a></li>
+                                        <li><a class="dropdown-item" href="#">WhatsApp Business</a></li>
+                                        <li><a class="dropdown-item" href="#">Call Center Solution</a></li>
+                                        <li><a class="dropdown-item" href="#">IVR/Toll Free</a></li>
+                                        <li><a class="dropdown-item" href="#">Voice Messaging</a></li>
+                                        <li><a class="dropdown-item" href="#">Long & Short Codes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Digital <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Social Media services</a></li>
+                                        <li><a class="dropdown-item" href="#">Paid Advertising</a></li>
+                                        <li><a class="dropdown-item" href="#">Video Marketing</a></li>
+                                        <li><a class="dropdown-item" href="#">Email Marketing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Development <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                        <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                                        <li><a class="dropdown-item" href="#">Application Development</a></li>
+                                        <li><a class="dropdown-item" href="#">Devops</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Connect</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="search-bar-bt" class="nav-link" href="#"><i
+                                            class="fa-solid fa-magnifying-glass"></i></a>
+                                </li>
+                                <li class="nav-item" onclick="open_right_side()">
+                                    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--============ navigation left slidebar================-->
+                <aside>
+                    <div id="mySidenav" class="sidenav">
+                        <div class="side-nav-logo d-flex justify-content-between align-items-center ps-4 pe-3">
+                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/Logo.png" alt="img"
+                                class="nav-logo"></a></figure>
+                            <div class="closebtn" onclick="closeNav()"><i
+                                    class="fa-solid fa-square-xmark side-bar-close-btn"></i></div>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feature.html">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-flex align-items-center justify-content-between pt-3" id="slid-btn">
+                                    <button class="a-slid">Pages</button>
+                                    <i class="fa-solid fa-caret-down pe-4"></i>
+                                </div>
+                                <ul id="slid-drop" class="myst">
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="coming.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--================== navigation drop search bar================-->
+                <div class="search" id="search-bar">
+                    <form class="d-flex nav-search">
+                        <input type="text" name="search" placeholder="Enter your text">
+                        <button class="btn-hover1" type="submit">Search</button>
+                    </form>
+                    <button id="remove-btn">
+                        <i class="fa-solid fa-square-xmark "></i>
+                    </button>
+                </div>
+                <!--=================navigation Right slidebar==================-->
+                <section class="right-sidbar" id="right_side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- site logo -->
+                        <a class="p-0 " href="index.html"><img src="assets/images/suvega-logo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p class="mt-4 pb-3">We at Suvega Digital Media offer expertise in mobile marketing and digital marketing solutions to serve your business communication needs.
+                    </p>
+                    <a href="#" class="btn-hover1">Discover More</a>
+                    <hr>
+                    <h5 class="mt-4 mb-4">Connected Details:</h5>
+                    <ul class="d-flex flex-column gap-3">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#">info@suvegadigital.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#">+91-7503795070</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-clock"></i></a>
+                            <a href="#">Office Hours: 10AM - 7PM</a>
+                        </li>
+                    </ul>
+                    <span class="d-flex gap-4 mt-4">
+                        <a href="https://www.facebook.com/suvegadigital/" class="p-0"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/suvegadigital/" class="p-0"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/DigitalSuvega" class="p-0"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/suvega-digital-media-pvt-ltd" class="p-0"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ======== End of 1.1. header section ========  -->
+                    <!-- ======== 9.1. Blogs cards section ========  -->
+
+            <section>
+                <div class="about-hero container">
+                            <h1 class="text-center page-title">SMS SERVICE</h1>
+                            <p class="text-center about-p">Instant Reach, Personal Touch: Suvega Digital SMS, Powering Your Communication Effortlessly.</p>
+                            <div class="services  pb-lg-4 pb-md-2 pb-sm-0 pb-0 mb-lg-2 mb-md-1 mb-sm-0 mb-0">
+                                <div class="container">
+                                    <div class="row gap-md-0 gap-sm-4 gap-4">
+                                        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+                                            <h2 class="text-lg-start text-md-start text-sm-center text-center">Elevating Your Messaging Experience Today</h2>
+                                            <p
+                                              class="text-lg-start text-md-start text-sm-center text-center mt-lg-4 mt-md-2 mt-sm-2 mt-2 pb-4 ">
+                                              Give your business the much needed boost by choosing from our range of SMS services. Bulk SMS campaigns are one of the most customer-friendly and easy-to-use marketing channels. Since everyone possess a mobile phone today mostly for internet access; it is not surprising that business promotion via electronic gizmo has become the most sought after way of marketing.    
+                                            </p>
+                                            <p class="text-lg-start text-md-start text-sm-center text-center pb-4 ">
+                                                A pioneer and one of the strongest player in this field, Suvega Digital offers customized SMS solutions to help you connect with clients and potential customers, thereby increasing your reach and potential. Our advanced technology enables you to send bulk promotional and transactional SMSes to multiple users, without having to face too many hurdles.    
+                                            </p>
+        
+                                            <!-- <div
+                                                class="serives-btn justify-content-md-start justify-content-ms-center justify-content-center d-flex pt-lg-4 pt-md-2 pt-sm-2 pt-2">
+                                                <a class="btn-hover1" href="#">Get The Card</a>
+        
+                                            </div> -->
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center abt" data-aos="fade-down">
+                                            <div class="position-relative">
+                                                <!-- <figure class="abut-hero-img1"><img src="assets/images/about/lady-mobile.png" alt="img"></figure> -->
+                                                <figure class="abut-hero-img1"><img src="assets/images/sms-services/sms-service.jpg" alt="img" class="rounded"></figure>
+                                                <figure class="abut-hero-img2"><img src="assets/images/icon/whitStar.png" alt="img"></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </section>
+
+            <section class="news-cards">
+                <div class="container">
+                    <div class="row d-flex gap-md-0 gap-sm-5 gap-4 mb-5">
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                                <h4>Web Development</h4>
+                                <p class="p-f-s">
+                                    Crafting dynamic websites tailored to your brand, optimizing user experience and engagement.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                                <h4>Web Development</h4>
+                                <p class="p-f-s">
+                                    Crafting dynamic websites tailored to your brand, optimizing user experience and engagement.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                                <h4>Web Development</h4>
+                                <p class="p-f-s">
+                                    Crafting dynamic websites tailored to your brand, optimizing user experience and engagement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex gap-md-0 gap-sm-5 gap-4">
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                                <h4>Web Development</h4>
+                                <p class="p-f-s">
+                                    Crafting dynamic websites tailored to your brand, optimizing user experience and engagement.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                                <h4>Web Development</h4>
+                                <p class="p-f-s">
+                                    Crafting dynamic websites tailored to your brand, optimizing user experience and engagement.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                                <h4>Web Development</h4>
+                                <p class="p-f-s">
+                                    Crafting dynamic websites tailored to your brand, optimizing user experience and engagement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+            
+            <!-- ======== End of 9.1. Blogs cards section ========  -->
+        </div>
+                <!-- ======== 1.13. footer section ========  -->
+                <footer class="position-relative">
+                    <div class="container">
+                        <h4 class="text-center">SUBSCRIBE OUR NEWSLETTER</h4>
+                        <P class="text-center pt-2 pb-3">Get latest News and Updates</P>
+                        <form class="d-flex align-items-center justify-content-center" id="footer-sub2">
+                            <!-- form Subscribe massage -->
+                            <div id="Succes-box2"></div>
+                            <div class="d-flex footer-search ">
+                                <input type="email" name="search" placeholder="Enter your Email" required>
+                                <button type="submit" class="btn-hover1">Subscribe</button>
+                            </div>
+                        </form>
+                        <div class="footer-logo text-center pb-lg-4 pb-md-3 pb-sm-2 pb-4">
+                            <!-- footer logo  -->
+                            <a href="index.html">
+                                <figure><img src="assets/images/suvega-logo.png" alt="img"></figure>
+                            </a>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-center">
+                            <li>
+                                <a href="#">Feature</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="/about.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="/faq.html">Faq</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="row footer-nav-icon">
+                            <!-- footer social icon  -->
+                            <div class="col-lg-3 col-md-3 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                                <div
+                                    class="social-icon d-flex gap-2 justify-content-md-start justify-content-sm-center justify-content-center">
+                                    <a href="https://www.facebook.com/suvegadigital/" target="_blank"> <i class="fa-brands fa-facebook-f foot-facebook"></i></a>
+                                    <a href="https://twitter.com/DigitalSuvega" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/suvegadigital/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://in.linkedin.com/company/suvegadigitalmedia" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <!-- footer terms privacy  -->
+                            <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                                <div class=" d-flex gap-3 p-2">
+                                    <a href="/term-condition.html">Terms & Condition</a>
+                                    <a href="/privacy-policy.html">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <!-- footer logo slider  -->
+                            <div class="col-lg-3 col-md-3">
+                                <div class="footer_ispsum_slider">
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Copyright d-flex justify-content-between flex-wrap dir">
+                                <p>Copyright © 2023 Suvega Digital. All Right Reserved.</p>
+                                <p>Powered by Suvega Digital</p>
+                            </div>
+                        </div>
+                </footer>
+                <!-- ======== End of 1.13. footer section ========  -->
+    </div>        
+    <!-- end site wrapper -->
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+    <!-- bootstrap min javascript -->
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- counter javascript file -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+      </script>
+</body>
+</html>
