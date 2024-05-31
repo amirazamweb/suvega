@@ -1351,7 +1351,8 @@ box-shadow: none !important;
     margin-top: 10px;
 }
 .card-body {
-    padding: 1.3rem 0rem 1rem 0rem !important;
+    padding: 1.3rem 1rem 1rem 1rem !important;
+    text-align: center;
 }
 .card-body a{
     font-size: 18px;
@@ -1374,7 +1375,7 @@ box-shadow: none !important;
     color: #E4E4E4;
 }
 .news-card-back {
-    background: transparent;
+    background-color: #052637 !important;
     color: white !important;
     border: none !important;
     width: 100% !important;
@@ -2171,3 +2172,9 @@ footer ul li a:hover{
    
 }
 /* ========End of 11.2. Coming footer section ======== */
+
+@media only screen and (min-width: 768px) {
+    .large-div-gap {
+      margin-top: 28px;
+    }
+  }
