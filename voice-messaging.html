@@ -1,11 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paypath</title>
+        <!-- favicon  -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- faremwork of css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+        <!-- style sheet of css        -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive sheet of css -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- fonts awsome icon link            -->
+        <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+        <!-- slick-slider link css -->
+        <link rel="stylesheet" href="assets/css/slick.min.css">
+        <!-- animation of css -->
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </head>
 <body>
-   <h1>Voice Messaging</h1> 
+    <div class="site-wrapper">
+        <div class="first_nav_hero_about">
+            <!-- ======== 1.1. header section ======== -->
+            <header>
+                <nav class="container navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <!-- site logo -->
+                        <a class="nav-logo p-0" href="index.html"><img src="assets/images/suvega-logo.png" alt="logo"></a>
+                                <!-- navigation button  -->
+                        <button class="navbar-toggle" onclick="openNav()" type="button"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- navigation bar manu  -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul
+                                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-2 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About us</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Enterprise <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="sms-services.html">SMS Services</a></li>
+                                        <li><a class="dropdown-item" href="whatsapp-marketing.html">WhatsApp Business</a></li>
+                                        <li><a class="dropdown-item" href="cloud-call-center-solution.html">Call Center Solution</a></li>
+                                        <li><a class="dropdown-item" href="ivr-toll-free-number.html">IVR/Toll Free</a></li>
+                                        <li><a class="dropdown-item" href="voice-messaging.html">Voice Messaging</a></li>
+                                        <li><a class="dropdown-item" href="long-short-codes.html">Long & Short Codes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Digital <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="social-media-services.html">Social Media Services</a></li>
+                                        <li><a class="dropdown-item" href="paid-advertising.html">Paid Advertising</a></li>
+                                        <li><a class="dropdown-item" href="video-marketing.html">Video Marketing</a></li>
+                                        <li><a class="dropdown-item" href="email-marketing.html">Email Marketing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Development <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="website-development.html">Web Development</a></li>
+                                        <li><a class="dropdown-item" href="app-development.html">Mobile App Development</a></li>
+                                        <li><a class="dropdown-item" href="application-development.html">Application Development</a></li>
+                                        <li><a class="dropdown-item" href="devops.html">Devops</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blogs.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Connect</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="search-bar-bt" class="nav-link" href="#"><i
+                                            class="fa-solid fa-magnifying-glass"></i></a>
+                                </li>
+                                <li class="nav-item" onclick="open_right_side()">
+                                    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--============ navigation left slidebar================-->
+                <aside>
+                    <div id="mySidenav" class="sidenav">
+                        <div class="side-nav-logo d-flex justify-content-between align-items-center ps-4 pe-3">
+                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/suvega-logo.png" alt="img"
+                                class="nav-logo"></a></figure>
+                            <div class="closebtn" onclick="closeNav()"><i
+                                    class="fa-solid fa-square-xmark side-bar-close-btn"></i></div>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-flex align-items-center justify-content-between pt-3" id="slid-btn">
+                                    <button class="a-slid">Services</button>
+                                    <i class="fa-solid fa-caret-down pe-4"></i>
+                                </div>
+                                <ul id="slid-drop" class="myst">
+                                    <li><a href="sms-services.html">SMS Services</a></li>
+                                    <li><a href="whatsapp-marketing.html">WhatsApp Business</a></li>
+                                    <li><a href="cloud-call-center-solution.html">Call Center Solution</a></li>
+                                    <li><a href="ivr-toll-free-number.html">IVR/ Toll Free</a></li>
+                                    <li><a href="voice-messaging.html">Voice Messaging</a></li>
+                                    <li><a href="long-short-codes.html">Long & Short Codes</a></li>
+                                    <li><a href="social-media-services.html">Social Media Services</a></li>
+                                    <li><a href="paid-advertising.html">Paid Advertising</a></li>
+                                    <li><a href="video-marketing.html">Video Marketing</a></li>
+                                    <li><a href="email-marketing.html">Email Marketing</a></li>
+                                    <li><a href="website-development.html">Web Development</a></li>
+                                    <li><a href="app-development.html">Mobile App Development</a></li>
+                                    <li><a href="application-development.html">Application Development</a></li>
+                                    <li><a href="devops.html">Devops</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blogs.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Connect</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--================== navigation drop search bar================-->
+                <div class="search" id="search-bar">
+                    <form class="d-flex nav-search">
+                        <input type="text" name="search" placeholder="Enter your text">
+                        <button class="btn-hover1" type="submit">Search</button>
+                    </form>
+                    <button id="remove-btn">
+                        <i class="fa-solid fa-square-xmark "></i>
+                    </button>
+                </div>
+                <!--=================navigation Right slidebar==================-->
+                <section class="right-sidbar" id="right_side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- site logo -->
+                        <a class="p-0 " href="index.html"><img src="assets/images/suvega-logo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p class="mt-4 pb-3">We at Suvega Digital Media offer expertise in mobile marketing and digital marketing solutions to serve your business communication needs.
+                    </p>
+                    <a href="#" class="btn-hover1">Discover More</a>
+                    <hr>
+                    <h5 class="mt-4 mb-4">Connected Details:</h5>
+                    <ul class="d-flex flex-column gap-3">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#">info@suvegadigital.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#">+91-7503795070</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-clock"></i></a>
+                            <a href="#">Office Hours: 10AM - 7PM</a>
+                        </li>
+                    </ul>
+                    <span class="d-flex gap-4 mt-4">
+                        <a href="https://www.facebook.com/suvegadigital/" class="p-0"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/suvegadigital/" class="p-0"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/DigitalSuvega" class="p-0"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/suvega-digital-media-pvt-ltd" class="p-0"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ======== End of 1.1. header section ========  -->
+                    <!-- ======== 9.1. Blogs cards section ========  -->
+
+            <section>
+                <div class="about-hero container">
+                            <h1 class="text-center page-title">Voice Messaging</h1>
+                            <p class="text-center about-p">Connect instantly with Voice Messaging: Clear, reliable, and efficient communication every time.</p>
+                            <div class="services  pb-lg-4 pb-md-2 pb-sm-0 pb-0 mb-lg-2 mb-md-1 mb-sm-0 mb-0">
+                                <div class="container">
+                                    <div class="row gap-md-0 gap-sm-4 gap-4">
+                                        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+                                            <h2 class="text-lg-start text-md-start text-sm-center text-center">Instant Voice Communication Solutions</h2>
+                                            <p
+                                              class="text-lg-start text-md-start text-sm-center text-center mt-lg-4 mt-md-2 mt-sm-2 mt-2 pb-4 ">
+                                              Suvega Digital offers cutting-edge Voice Messaging services in Noida and Delhi NCR, enabling businesses to communicate effectively with their customers. Our voice messaging solutions ensure clear, reliable, and timely delivery of messages, enhancing customer engagement and satisfaction. Whether for updates, reminders, or promotions, our service guarantees that your messages are heard and understood.   
+                                            </p>
+                                            <p class="text-lg-start text-md-start text-sm-center text-center pb-4 ">
+                                                Based in the bustling regions of Noida and Delhi NCR, Suvega Digital understands the unique needs of local businesses. Our Voice Messaging services are tailored to provide maximum impact and efficiency, helping companies streamline their communication strategies and maintain strong customer relationships. Trust Suvega Digital to elevate your business communication.
+                                            </p>
+        
+                                            <!-- <div
+                                                class="serives-btn justify-content-md-start justify-content-ms-center justify-content-center d-flex pt-lg-4 pt-md-2 pt-sm-2 pt-2">
+                                                <a class="btn-hover1" href="#">Get The Card</a>
+        
+                                            </div> -->
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center abt" data-aos="fade-down">
+                                            <div class="position-relative">
+                                                <!-- <figure class="abut-hero-img1"><img src="assets/images/about/lady-mobile.png" alt="img"></figure> -->
+                                                <figure class="abut-hero-img1"><img src="assets/images/sms-services/sms-service.jpg" alt="img" class="rounded"></figure>
+                                                <figure class="abut-hero-img2"><img src="assets/images/icon/whitStar.png" alt="img"></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </section>
+
+            <section class="finance mt-lg-4 mt-md-2 mt-sm-0 mt-0">
+                <div class="container text-center">
+                    <h2>Features</h2>
+                    <P class="mt-0">Why to choose Suvega Digital’s voice messaging service</P>
+                    <div class="finanes-card row gap-md-0 gap-sm-4 gap-4">
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                                <h4>High ROI</h4>
+                                <p class="p-f-s">
+                                    Real-time call logs and analytics of IVR number provides you actual usage matrix. You get access to check number of missed and remaining calls
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure> <img src="assets/images/icon/doller.png" alt="doller"></figure>
+                                <h4>Mass Reach</h4>
+                                <p class="p-f-s">
+                                    IVR and Toll free provides you the flexibility to record incoming calls for future access. Call recordings can be later downloaded from the panel or via API.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                                <h4>Customized Message</h4>
+                                <p class="p-f-s">
+                                    Incoming calls can be forwarded to multiple users , each user having a separate login. This gives user wise analytics report.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center large-div-gap">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                                <h4>Lead Generation</h4>
+                                <p class="p-f-s">
+                                    Toll Free IVR number gives you accurate analytics about your team and the callers. This enables to assess team’s performance bases on these analytics.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center large-div-gap">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                                <h4>Emergency Alerts</h4>
+                                <p class="p-f-s">
+                                    You can set multiple agents to attend calls with different forwarding types i.e. Parallel, Straight & Cyclic.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center large-div-gap">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                                <h4>Flexible Scheduling</h4>
+                                <p class="p-f-s">
+                                    Our IVR and Toll free service allows you to create IVRs, which can be well integrated with your CRM software.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center large-div-gap">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                                <h4>Real-Time Reporting</h4>
+                                <p class="p-f-s">
+                                    Suvega Digital gives you the option of customized reporting. Through this, you can view and analyze each agent’s call report to track success rate.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center large-div-gap">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                                <h4>Political Campaigns</h4>
+                                <p class="p-f-s">
+                                    We give you the freedom to decide what you wish the customers to hear on first and subsequent calls. This enables you to engage customers and gives them relevant information.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 d-flex justify-content-center large-div-gap">
+                            <div class="fin-card" data-aos="flip-up">
+                                <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                                <h4>Integration with API</h4>
+                                <p class="p-f-s">
+                                    Our service ensures that the customer’s query gets resolved and they get to speak to the right person who can help them with what they are looking for.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section class="question">
+                <div class="container">
+                    <h2 class="text-lg-start text-md-start text-sm-center" style="text-align: center !important;">FREQUENTLY ASKED QUESTIONS
+                    </h2>
+                    <div class="row mt-4">
+                        <div class="question-text col-lg-6 col-md-6 tab-center" data-aos="fade-up">
+                            <img src="https://suvegadigital.com/wp-content/uploads/2022/07/Sms.jpg" alt="faq-image" class="w-full">
+                        </div>
+                        <div class="question-collapes col-lg-6 col-md-6 mt-md-0 mt-sm-3 mt-3" data-aos="zoom-in">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            What is Voice Sms?
+                                        </button>
+                                    </h5>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Voice Sms or Outbound Dialer (OBD) is a technology that automates bulk voice calls to mobile/telephone users and playing pre-recorded messages. Bulk Voice Sms or Outbound dialer system can dial out the required set of phone numbers and play the recorded prompts (messages) and also gather touch-tone inputs from the end-users to measure the response of the bulk voice Sms campaign.
+                                             </p>
+                                             <p>
+                                                The duration of voice message is upto 30 seconds. Voice sms is one of the best solution and service that help to reach the maximum audiences for growing any kind of business.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Can i schedule calls on landline numbers as well?
+                                        </button>
+                                    </h5>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Yes you can schedule calls on both mobile and landline numbers. Please make sure that the number entered is a ten digit number For example: Mobile Number should be entered without 0 or 91 (9711520500) Land line numbers should be entered with the std code omitting 0 (1146208080)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Is there a difference in rates for STD and local calls?
+                                        </button>
+                                    </h5>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>No there is no difference in rates for STD and local calls.
+
+                                                Voice Call broadcasting service allows you to send pre-recorded voice message to thousands or even lakhs of mobile and landline phones with easiest way while managing the entire process right from the Web interface.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- ======== End of 9.1. Blogs cards section ========  -->
+        </div>
+                <!-- ======== 1.13. footer section ========  -->
+                <footer class="position-relative">
+                    <div class="container">
+                        <div class="footer-logo text-center pb-lg-4 pb-md-3 pb-sm-2 pb-4">
+                            <!-- footer logo  -->
+                            <a href="index.html">
+                                <figure><img src="assets/images/suvega-logo.png" alt="img"></figure>
+                            </a>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-center">
+                            <li>
+                                <a href="#">Feature</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="/about.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="/faq.html">Faq</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="row footer-nav-icon">
+                            <!-- footer social icon  -->
+                            <div class="col-lg-3 col-md-3 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                                <div
+                                    class="social-icon d-flex gap-2 justify-content-md-start justify-content-sm-center justify-content-center">
+                                    <a href="https://www.facebook.com/suvegadigital/" target="_blank"> <i class="fa-brands fa-facebook-f foot-facebook"></i></a>
+                                    <a href="https://twitter.com/DigitalSuvega" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/suvegadigital/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://in.linkedin.com/company/suvegadigitalmedia" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <!-- footer terms privacy  -->
+                            <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                                <div class=" d-flex gap-3 p-2">
+                                    <a href="/term-condition.html">Terms & Condition</a>
+                                    <a href="/privacy-policy.html">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <!-- footer logo slider  -->
+                            <div class="col-lg-3 col-md-3">
+                                <div class="footer_ispsum_slider">
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                                    </figure>
+                                    <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Copyright d-flex justify-content-between flex-wrap dir">
+                                <p>Copyright © 2023 Suvega Digital. All Right Reserved.</p>
+                                <p>Powered by Suvega Digital</p>
+                            </div>
+                        </div>
+                </footer>
+                <!-- ======== End of 1.13. footer section ========  -->
+    </div>        
+    <!-- end site wrapper -->
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+    <!-- bootstrap min javascript -->
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- counter javascript file -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+      </script>
 </body>
 </html>
