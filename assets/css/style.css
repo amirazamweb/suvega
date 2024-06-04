@@ -227,7 +227,7 @@ iframe {
 /* =====  End of 01. Reset  ====== */
 /* ===== 02. Global Style ===== */
 h1{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 800;
     line-height: 91px;
     letter-spacing: -2px;
@@ -239,7 +239,7 @@ h1{
 }
 
 h2{
-    font-size: 52px;
+    font-size: 43px;
     font-weight: 700;
     line-height: 57px;
     letter-spacing: -2px;
@@ -1290,7 +1290,7 @@ color: #DB9B1E;
 /* ======== End of 1.10. profaessional section ======== */
 /* ======== 1.11. question section ======== */
 .question{
-   padding-top: 100px;   
+   padding-top: 50px;   
 background: linear-gradient(180deg, rgba(8, 45, 64, 0.63) 0%, rgba(8, 45, 64, 0.00) 100%);
 }
 .question p{
@@ -1410,7 +1410,7 @@ box-shadow: none !important;
 /* ======== End of 1.12. news-cards section ======== */
 /* ======== 1.13. footer section ======== */
 footer {
-   padding-top: 100px;
+   padding-top: 15px;
    padding-bottom: 15px;
   background: radial-gradient(53.25% 96.6% at 53.86% 100.69%, #136165 0.82%, #0B3B48 30.73%, #072A36 64.58%, rgba(3, 21, 33, 0.00) 100%)
 }
@@ -1572,7 +1572,7 @@ footer ul li a:hover{
    
 }
 .abut-hero-img1 {
-    padding-bottom: 79px;
+    padding-bottom: 25px;
     margin-right: -7px;
 }
 .abut-hero-img1 img{
@@ -2176,5 +2176,16 @@ footer ul li a:hover{
 @media only screen and (min-width: 768px) {
     .large-div-gap {
       margin-top: 28px;
+    }
+  }
+
+  .home-h1{
+    font-size: 90px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .home-h1 {
+        font-size: 45px !important;
+        background-color: red;
     }
   }

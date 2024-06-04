@@ -441,7 +441,7 @@
     width: 80%;
 }
 .question {
-    padding-top: 70px;
+    padding-top: 10px;
 }
 .accordion {
     padding: 30px 15px;
@@ -952,7 +952,7 @@ width: 70%;
         font-size: 13px !important;
     }
     .question {
-        padding: 60px 0px;
+        padding: 10px 0px;
     }
     .question p{
         margin: 15px 0px;
@@ -1008,7 +1008,7 @@ width: 70%;
     }
     /* ====== About.html ====== */
     .abut-hero-img1 {
-        padding-bottom: 75px;
+        padding-bottom: 20px;
         margin-right: 0px;
         margin-left: 67px;
     }
