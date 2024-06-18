@@ -853,13 +853,17 @@ background-color: #082D40;
 }
 .fin-card figure {
     background: linear-gradient(rgba(37, 137, 172, 1), rgba(219, 155, 30, 1));
-    padding: 20px 10px;
+    padding: 5px;
     -webkit-text-fill-color: transparent;
     width: 118px;
     height: 100px;
     display: block;
     margin: auto;
     border-radius: 15px;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .fin-card figure img{
     transition: transform 0.3s ease;
@@ -868,13 +872,13 @@ background-color: #082D40;
     transform: scale(1.1) rotate(1.9deg);
 }
 .fin-card figure img[alt='praph']{
-    width: 55px;
+    width: 100%;
 }
 .fin-card figure img[alt='doller']{
-    width: 40px;
+    width: 100%;
 }
 .fin-card figure img[alt='arow']{
-    width: 57px;
+    width: 100%;
 }
 /* ======== End of 1.4. finance section ======== */
 /* ======== 1.5. ispsum section ======== */
